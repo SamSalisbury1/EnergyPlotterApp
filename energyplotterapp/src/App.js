@@ -1,20 +1,23 @@
 import './App.css';
+import Greeting from './Components/Greeting';
+import AddEntryForm from './Components/AddEntryForm';
+import EnergyGraph from './Components/EnergyGraph';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div id="Title-Container">
-          <h1>Good Morning</h1>
-          <h2>Would you like to...</h2>
-        </div>
+  // let consumptionData = [{}]
 
-        <div id="Button-Container">
-          <button type="button" class="btn btn-primary">Log Energy Usage</button>
-          <button type="button" class="btn btn-primary">View Energy Usage</button>
-        </div>
-      </header>
-    </div>
+  return (
+    <>
+      <div className='content-container'>
+        <Greeting />
+      </div>
+      <div className='content-container'>
+        <AddEntryForm />
+      </div>
+      <div className='content-container'>
+        <EnergyGraph />
+      </div>
+    </>
   );
 }
 
